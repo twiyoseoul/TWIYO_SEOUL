@@ -25,6 +25,18 @@ body{
     color:#222;
 }
 
+
+    
+.address-text{
+    font-size:14px;
+    color:#444;
+    margin-bottom:10px;
+    line-height:1.4;
+    text-align:center;
+    font-weight:500;
+}
+
+    
 /* ===== FIXED BACKGROUND IMAGE ===== */
 .bg-fixed{
     position:fixed;
@@ -36,19 +48,6 @@ body{
     z-index:-2;
 }
 
-/* ===== HERO PNG ===== */
-.hero-top{
-    width:100%;
-    display:flex;
-    justify-content:center;
-    padding-top:30px;
-}
-
-.hero-img{
-    max-width:90%;
-    height:auto;
-    object-fit:contain;
-}
 
 /* ===== TITLE BOX ===== */
 .title-section{
@@ -201,16 +200,12 @@ body{
 <!-- FIXED BACKGROUND -->
 <div class="bg-fixed"></div>
 
-<!-- HERO PNG -->
-<div class="hero-top">
-    <img src="hero.png" class="hero-img">
-</div>
 
 <!-- TITLE -->
 <div class="title-section">
     <div class="title-box">
         <h1>TWIYO SEOUL</h1>
-        <p>Your stay guide • Welcome home</p>
+        <p>This page is designed to guide our guests on how to get to TWIYO.</p>
     </div>
 </div>
 
@@ -233,12 +228,19 @@ body{
     </div>
 
     <!-- MAP -->
-    <div class="card">
-        <div class="section-title">🗺️ Location</div>
-        <div class="map-box">
-            <iframe src="https://naver.me/x7eTz4Ux"></iframe>
-        </div>
+<div class="card">
+    <div class="section-title">🗺️ Location</div>
+
+    <!-- 주소 텍스트 -->
+    <div class="address-text">
+        📍 2 Galhyeon-ro 3da-gil, Seoul, Korea  
+        <br>갈현로3다길 2
     </div>
+
+    <div class="map-box">
+        <iframe src="https://naver.me/x7eTz4Ux"></iframe>
+    </div>
+</div>
 
     <!-- ACCOMMODATION -->
     <div class="card">
@@ -274,3 +276,4 @@ function closeLightbox(){
 
 </body>
 </html>
+
