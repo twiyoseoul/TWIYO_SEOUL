@@ -14,7 +14,10 @@
     --accent:#c9a36a;
 }
 
-*{box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",sans-serif}
+*{
+    box-sizing:border-box;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",sans-serif;
+}
 
 body{
     margin:0;
@@ -22,12 +25,23 @@ body{
     color:#222;
 }
 
-/* ===== HERO IMAGE TOP ===== */
+/* ===== FIXED BACKGROUND IMAGE ===== */
+.bg-fixed{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    background:url("background.jpg") center/cover no-repeat;
+    z-index:-2;
+}
+
+/* ===== HERO PNG ===== */
 .hero-top{
     width:100%;
     display:flex;
     justify-content:center;
-    padding-top:20px;
+    padding-top:30px;
 }
 
 .hero-img{
@@ -36,7 +50,7 @@ body{
     object-fit:contain;
 }
 
-/* ===== TITLE SECTION ===== */
+/* ===== TITLE BOX ===== */
 .title-section{
     width:100%;
     display:flex;
@@ -45,11 +59,12 @@ body{
 }
 
 .title-box{
-    background:rgba(120,120,120,.75);
+    background:rgba(255,255,255,0.85);
     padding:20px 24px;
     border-radius:18px;
-    color:#fff;
+    color:#111;
     width:85%;
+    text-align:center;
 }
 
 .title-box h1{
@@ -73,14 +88,14 @@ body{
 
 /* ===== CARD ===== */
 .card{
-    background:var(--card);
+    background:rgba(255,255,255,0.95);
     border-radius:22px;
     padding:18px;
     margin-bottom:18px;
     box-shadow:0 10px 28px rgba(0,0,0,.06);
 }
 
-/* ===== TITLE ===== */
+/* ===== SECTION TITLE ===== */
 .section-title{
     font-size:16px;
     font-weight:600;
@@ -183,12 +198,15 @@ body{
 
 <body>
 
-<!-- HERO IMAGE -->
+<!-- FIXED BACKGROUND -->
+<div class="bg-fixed"></div>
+
+<!-- HERO PNG -->
 <div class="hero-top">
     <img src="hero.png" class="hero-img">
 </div>
 
-<!-- TITLE BOX -->
+<!-- TITLE -->
 <div class="title-section">
     <div class="title-box">
         <h1>TWIYO SEOUL</h1>
@@ -218,7 +236,7 @@ body{
     <div class="card">
         <div class="section-title">🗺️ Location</div>
         <div class="map-box">
-            <iframe src="https://naver.me/5RAKorQv"></iframe>
+            <iframe src="https://naver.me/x7eTz4Ux"></iframe>
         </div>
     </div>
 
