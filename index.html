@@ -36,6 +36,31 @@ body{
     font-weight:500;
 }
 
+/* 지도 모바일 링크 스타일 */
+.map-link{
+    position:relative;
+    overflow:hidden;
+}
+
+.map-preview{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:18px;
+}
+
+.map-overlay-btn{
+    position:absolute;
+    bottom:12px;
+    left:50%;
+    transform:translateX(-50%);
+    background:rgba(0,0,0,0.65);
+    color:#fff;
+    padding:10px 16px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+}    
     
 /* ===== FIXED BACKGROUND IMAGE ===== */
 .bg-fixed{
@@ -237,8 +262,11 @@ body{
         <br>갈현로3다길 2
     </div>
 
-    <div class="map-box">
-        <iframe src="https://naver.me/x7eTz4Ux"></iframe>
+    <div class="map-box map-link">
+    <a href="https://naver.me/x7eTz4Ux" target="_blank">
+        <img src="map-preview.jpg" class="map-preview">
+        <div class="map-overlay-btn">📍 Open in Naver Map</div>
+    </a>
     </div>
 </div>
 
@@ -276,4 +304,5 @@ function closeLightbox(){
 
 </body>
 </html>
+
 
